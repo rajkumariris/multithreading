@@ -1,4 +1,4 @@
-package multithreading.Threading.NumberPrinter;
+package multithreading.Threading.Executors;
 
 public class NumberPrinter implements  Runnable{
     private int i;
