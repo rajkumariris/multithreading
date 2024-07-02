@@ -1,0 +1,18 @@
+package multithreading.Threading.syncMethod;
+
+import java.util.concurrent.Callable;
+
+public class Substractor implements Callable<Void> {
+    private Value SubValue;
+    public Substractor(Value v){
+        this.SubValue = v;
+    }
+
+    @Override
+    public  Void call() throws Exception {
+       for(int i =1;i<=5000;i++){
+              SubValue.DecrementBy();
+       }
+       return null;
+    }
+}
